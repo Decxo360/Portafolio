@@ -9,7 +9,7 @@ export const CardComponent = ({titulo,etiquetas,descripcion,url,codigo}) => {
         </div>
         <div >
         <h1 className='flex justify-center items-center text-[40px] text-white'>{titulo}</h1>
-            <div className='grid grid-cols-3 justify-around ml-4 mr-10'> 
+            <div className='grid grid-cols-1 justify-around ml-4 mr-10 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3'> 
                 {etiquetas.map((etiqueta,index)=>(
                     <ButtomComponent key={index}>{etiqueta}</ButtomComponent>
                 ))}
