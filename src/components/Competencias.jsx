@@ -2,14 +2,14 @@ import React from 'react'
 import { CardRoundedComponent } from './CardRoundedComponent'
 
 const competencias=[
-    {id:0,entorno:'React',url:'https://es.reactjs.org/docs/getting-started.html',icono:'../../../public/react.png'},
-    {id:1,entorno:'Vue',url:'https://vuejs.org/',icono:'../../../public/vue.png'},
-    {id:2,entorno:'SQL',url:'https://www.mysql.com/',icono:'../../../public/Mysql.png'},
-    {id:3,entorno:'PHP',url:'https://www.php.net/',icono:'../../../public/php.png'},
-    {id:4,entorno:'Java',url:'https://www.java.com/es/',icono:'../../../public/java.png'},
-    {id:5,entorno:'Javascript',url:'https://www.javascript.com/',icono:'../../../public/js.png'},
-    {id:6,entorno:'Node',url:'https://nodejs.org/en/docs/',icono:'../../../public/node.png'},
-    {id:7,entorno:'Proximamente (Python)',url:'',icono:'../../../public/pyhton.png'}
+    {id:0,entorno:'React',url:'https://es.reactjs.org/docs/getting-started.html',icono:'https://res.cloudinary.com/drp7cwb8s/image/upload/v1666734355/react_eypjcq.png'},
+    {id:1,entorno:'Vue',url:'https://vuejs.org/',icono:'https://res.cloudinary.com/drp7cwb8s/image/upload/v1666734357/vue_z6mqkn.png'},
+    {id:2,entorno:'SQL',url:'https://www.mysql.com/',icono:'https://res.cloudinary.com/drp7cwb8s/image/upload/v1666734352/mysql_pgoz3n.png'},
+    {id:3,entorno:'PHP',url:'https://www.php.net/',icono:'https://res.cloudinary.com/drp7cwb8s/image/upload/v1666734353/php_uag8z5.png'},
+    {id:4,entorno:'Java',url:'https://www.java.com/es/',icono:'https://res.cloudinary.com/drp7cwb8s/image/upload/v1666734348/java_oiu8i5.png'},
+    {id:5,entorno:'Javascript',url:'https://www.javascript.com/',icono:'https://res.cloudinary.com/drp7cwb8s/image/upload/v1666734352/js_ovzjgp.png'},
+    {id:6,entorno:'Node',url:'https://nodejs.org/en/docs/',icono:'https://res.cloudinary.com/drp7cwb8s/image/upload/v1666734348/node_zsm507.png'},
+    {id:7,entorno:'Proximamente (Python)',url:'',icono:'https://res.cloudinary.com/drp7cwb8s/image/upload/v1666734356/pyhton_wdmadx.png'}
 ]
 
 export const Competencias = () => {
