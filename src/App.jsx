@@ -36,6 +36,7 @@ function App() {
           </svg>
       </div>
       <div ref={competencias}>
+        <h1 className='text-[30px] text-center'>Competencias:</h1>
         <Competencias/>
       </div>
       <div className='h-[150px] overflow-hidden'>
@@ -44,7 +45,9 @@ function App() {
             className='stroke-none fill-slate-900'></path>
           </svg>
       </div>
+      <h1 className='text-center text-[30px] text-white bg-slate-900'>Proyectos</h1>
       <div className='bg-slate-900 flex flex-wrap justify-center' ref={proyecto}>
+        
         {proyectos.map(({id,titulo,etiquetas,descripcion,url,codigo},index)=>(
           <CardComponent key={id} titulo={titulo} codigo={codigo} etiquetas={etiquetas} descripcion={descripcion} url={url}/>
         ))}
