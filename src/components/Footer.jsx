@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='pt-[20px] h-[600px] bg-[url(../../../public/bgFooter.svg)] flex flex-row justify-around items-center'>
+    <div className='pt-[20px] h-[600px] bg-[url(https://res.cloudinary.com/drp7cwb8s/image/upload/v1666734347/bgFooter_lcp7qz.svg)] flex flex-row justify-around items-center'>
       <div >
          <h1 className='text-[30px] text-white cursor-default'>Linkografia</h1>
          <ul>
