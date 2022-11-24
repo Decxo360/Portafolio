@@ -14,7 +14,7 @@ const competencias=[
 
 export const Competencias = () => {
   return (
-    <div className='flex justify-center items-start flex-wrap ' >
+    <div className='flex justify-center items-start flex-wrap animate__animated animate__zoomIn' >
         {competencias.map((competencia)=>(
            <CardRoundedComponent key={competencia.id} url={competencia.icono} texto={competencia.entorno} documentacion={competencia.url}></CardRoundedComponent>
         ))}
