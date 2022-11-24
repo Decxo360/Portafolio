@@ -1,75 +1,13 @@
-import React, { useState } from 'react'
-import { useRef } from 'react'
-
-import { Cv, Github, Linkedin, Gmail } from './svg/index'
 import { TooltipComponent } from './TooltipComponent'
+import { Cv, Github, Linkedin, Gmail } from './svg/index'
+import { useRedesSociales } from '../Hooks/useRedesSociales'
 
-import {gsap} from 'gsap'
-import { useEffect } from 'react'
 
 const urls = [{ url: 'diegolundstest99@gmail.com' }, { url: 'https://github.com/Decxo360' }, { url: 'https://www.linkedin.com/in/diegolundstedt/' }]
 
 export const RedesSociales = ({inicio}) => {
-  const [invisible, setInvisible] = useState('invisible')
-  const [msg, setMsg] = useState("Mi correo")
-  const [animacion,setAnimacion] = useState(false)
-
-  const linkedin = useRef(null)
-  const cv = useRef(null)
-  const gmail = useRef(null)
-  const github = useRef(null)
-  const toStart = useRef(null)
   
-  console.log(invisible)
-
-  const tl = gsap
-
-  const pressClick = () => {
-    navigator.clipboard.writeText(urls[0].url)
-    setMsg(() => '¡Copiado!')
-  }
-  const visible = () => {
-     if(invisible == 'invisible' ){
-      setInvisible('visible') 
-      setAnimacion(true)
-     }else{
-      setTimeout(()=>{
-         setInvisible('invisible')
-      },1500)   
-      setAnimacion(false)
-     }
-  }
-
-  const ToStart = (ref) =>{
-    window.scrollTo({
-      top:ref.current.offsetTop,
-      behavior:'smooth'
-    })
-  }
-  
-  useEffect(() => {
-    
-    if (animacion === false) {
-      tl.fromTo(toStart.current,{y:0},{y:600,duration:1,delay:1})
-      tl.fromTo(cv.current,{y:0},{y:480,duration:1,delay:1})
-      tl.fromTo(linkedin.current,{y:0},{y:360,duration:1,delay:1})
-      tl.fromTo(github.current,{y:0},{y:240,duration:1,delay:1})
-      tl.fromTo(gmail.current,{y:0},{y:120,duration:1,delay:1})
-      console.log('ejecuto este');
-    }else{
-      tl.fromTo(toStart.current,{y:600,duration:1,delay:1},{y:0 })
-      tl.fromTo(cv.current,{y:480,duration:1,delay:1},{y:0})
-      tl.fromTo(linkedin.current,{y:360,duration:1,delay:1},{y:0})
-      tl.fromTo(github.current,{y:240,duration:1,delay:1},{y:0})
-      tl.fromTo(gmail.current,{y:120,duration:1,delay:1},{y:0})
-      console.log('ejecuto este otro')
-    }
-   
-  }, [animacion])
-  
-  
-  
-
+  const {  invisible, msg, animacion, pressClick, visible, ToStart, linkedin, cv, gmail, github, toStart} = useRedesSociales()
 
   return (
     <div className='fixed bottom-[20px] right-[20px] '>
