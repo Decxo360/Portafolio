@@ -1,8 +1,9 @@
 import React from 'react'
 
-export const NavBar = ({aboutMe,competencias,proyecto,redesSociales}) => {
+export const NavBar = ({inicio,aboutMe,competencias,proyecto}) => {
 
   const scrollTo = (elementRef)=> {
+    console.log(elementRef);
     window.scrollTo({
       top:elementRef.current.offsetTop,
       behavior:'smooth'
@@ -10,12 +11,11 @@ export const NavBar = ({aboutMe,competencias,proyecto,redesSociales}) => {
   }
 
   return (
-    <div className='pt-5 flex justify-center items-center w-full  ' >
-        <div className='flex flex-row items-start'>
-            <p className='ml-4 text-white text-[15px] transition ease-in-out duration-700 hover:scale-125 cursor-pointer' onClick={()=> scrollTo(aboutMe)}>Sobre mí</p>
-            <p className='ml-4 text-white text-[15px] transition ease-in-out duration-700 hover:scale-125 cursor-pointer' onClick={()=>  scrollTo(competencias)}>Competencias</p>
-            <p className='ml-4 text-white text-[15px] transition ease-in-out duration-700 hover:scale-125 cursor-pointer' onClick={()=>  scrollTo(proyecto)}>Proyectos</p>
-            <p className='ml-4 text-white text-[15px] transition ease-in-out duration-700 hover:scale-125 cursor-pointer' onClick={()=>  scrollTo(redesSociales)}>Redes Sociales</p>
+    <div className='h-[60px] flex justify-center items-center w-full  ' ref={inicio}>
+        <div className='flex flex-row justify-center items-center'>
+            <p className='ml-4 text-white text-[20px] transition ease-in-out duration-700 hover:scale-125 cursor-pointer' onClick={()=> scrollTo(aboutMe)}>Sobre mí</p>
+            <p className='ml-4 text-white text-[20px] transition ease-in-out duration-700 hover:scale-125 cursor-pointer' onClick={()=>  scrollTo(competencias)}>Competencias</p>
+            <p className='ml-4 text-white text-[20px] transition ease-in-out duration-700 hover:scale-125 cursor-pointer' onClick={()=>  scrollTo(proyecto)}>Proyectos</p>
         </div>
     </div>
   )
