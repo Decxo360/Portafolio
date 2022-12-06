@@ -57,7 +57,7 @@ export const RedesSociales = ({inicio}) => {
       <div aria-disabled={animacion}>
         <TooltipComponent>
           <div className='flex bg-cyan-900 justify-center items-center rounded-full w-[80px] h-[80px] -2xl hover:cursor-pointer hover:shadow-blue-700 ' onClick={visible}>
-            <img width={43} src="https://cdn.icon-icons.com/icons2/1464/PNG/512/cell_100187.png" alt=" cruz" />
+            <img color='dark' className='rotate-45' width={43} src="https://img.icons8.com/ios-glyphs/512/delete-sign.png" alt="TresPuntos" />
           </div >
           <span className='tooltipText'> Opciones</span>
         </TooltipComponent>
