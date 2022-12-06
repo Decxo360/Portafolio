@@ -31,7 +31,7 @@ export const useRedesSociales = () =>{
         setAnimacion(false)
         setTimeout(()=>{
             setInvisible('invisible')
-        },1500)   
+        },2500)   
         }
     }
 
