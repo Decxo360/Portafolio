@@ -1,9 +1,7 @@
-import React from 'react'
-
+import {gsap} from 'gsap'
 export const NavBar = ({inicio,aboutMe,competencias,proyecto}) => {
 
   const scrollTo = (elementRef)=> {
-    console.log(elementRef);
     window.scrollTo({
       top:elementRef.current.offsetTop,
       behavior:'smooth'
