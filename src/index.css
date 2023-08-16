@@ -60,3 +60,14 @@
   
     background-color: #3c4950;
 }
+
+@keyframes punto {
+    50%{
+        transform: translateX(96px);
+    }
+}
+@keyframes puntos {
+    50%{
+        transform: translateX(-31px);
+    }
+}
