@@ -1,7 +1,6 @@
 import React from 'react'
-
-const nombre = 'Diego Ignacio Lundstedt Muñoz'
-const descripcion = `!Hola!, Me Llamo Diego Ignacio Lundstedt Muñoz y tengo 22 años. En la actualidad me dedico a ser desarrollador, tanto como Front-end como Back-end, cuento con un título técnico como Analista Programador desde hace ya un año. Soy una persona con muchos sueños y me esfuerzo constantemente por cumplirlos. Uno sería vivir complemamente del desarrollo y del mundo IT. Me gusta investigar constantemente respecto a tecnologías nuevas y lenguajes que no conozco, soy bastante curioso, perfeccionista, proactivo, motivado, perseverante, autodidacta, entre otras más. Actualmente cuento con algunos proyectos en base a mis conocimientos adquiridos de cursos y la curiosidad propia. Los cuales serán mostrados en la sección de proyectos. En la siguiente sección muestro mis competencias prácticas.`;
+import { CargaAnimada } from './CargaAnimada';
+import {nombre,descripcion} from "../constants/constante"
 
 export const AboutMe = () => {
   return (
