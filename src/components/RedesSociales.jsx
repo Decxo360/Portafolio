@@ -1,9 +1,8 @@
 import { TooltipComponent } from './TooltipComponent'
 import { Cv, Github, Linkedin, Gmail } from './svg/index'
 import { useRedesSociales } from '../Hooks/useRedesSociales'
+import {urls} from '../constants/constante'
 
-
-const urls = [{ url: 'diegolundstest99@gmail.com' }, { url: 'https://github.com/Decxo360' }, { url: 'https://www.linkedin.com/in/diegolundstedt/' }]
 
 export const RedesSociales = ({inicio}) => {
   
@@ -22,7 +21,7 @@ export const RedesSociales = ({inicio}) => {
         </div>
         <div ref={github}>
           <TooltipComponent>
-            <a className={`${invisible} flex bg-cyan-900 justify-center items-center rounded-full w-[80px] h-[80px]  mb-10  `} href={urls[1].url}>
+            <a className={`${invisible} flex bg-cyan-900 justify-center items-center rounded-full w-[80px] h-[80px]  mb-10  `} href={urls[1].url} target='_blank'>
               <Github />
             </a>
             <span className='tooltipText'> Mi Github</span>
@@ -30,7 +29,7 @@ export const RedesSociales = ({inicio}) => {
         </div>
         <div ref={linkedin}>
           <TooltipComponent>
-            <a className={`${invisible} flex bg-cyan-900 justify-center items-center rounded-full w-[80px] h-[80px]  mb-10 `} href={urls[2].url}>
+            <a className={`${invisible} flex bg-cyan-900 justify-center items-center rounded-full w-[80px] h-[80px]  mb-10 `} href={urls[2].url } target='_blank' >
               <Linkedin />
             </a>
             <span className='tooltipText'> Mi Linkedin </span>
@@ -38,7 +37,7 @@ export const RedesSociales = ({inicio}) => {
         </div>
         <div ref={cv}>
           <TooltipComponent>
-          <a download={'DiegoLundstedtCv'} className={`${invisible} flex bg-cyan-900 justify-center items-center  mb-10  rounded-full w-[80px] h-[80px] `} href={'https://drive.google.com/file/d/12H-RbyrqxAc3ep42y7P-t6F6SjMWfX7t/view?usp=share_link'}>
+          <a className={`${invisible} flex bg-cyan-900 justify-center items-center  mb-10  rounded-full w-[80px] h-[80px] `} href={'https://drive.google.com/drive/folders/1KKOHCcpbmIWOM8wlNq0sggyNUWuSCAY3?usp=sharing'} target='_blank'>
             <Cv></Cv>
           </a>
           <span className='tooltipText'>Mi cv</span>
