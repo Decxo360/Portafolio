@@ -54,8 +54,8 @@ function App() {
       <h1 className='text-center text-[30px] text-white bg-slate-900'>Proyectos</h1>
       <div className='bg-slate-900 flex flex-wrap justify-center pb-[150px]' ref={proyecto}>
 
-        {proyectos.map(({ id, titulo, etiquetas, descripcion, url, codigo }, index) => (
-          <CardComponent key={id} titulo={titulo} codigo={codigo} etiquetas={etiquetas} descripcion={descripcion} url={url} />
+        {proyectos.map(({ id, titulo, etiquetas, descripcion, url, codigo,web }, index) => (
+          <CardComponent key={id} titulo={titulo} codigo={codigo} etiquetas={etiquetas} descripcion={descripcion} url={url} web={web} />
         ))}
       </div>
 
