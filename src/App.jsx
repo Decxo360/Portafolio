@@ -7,6 +7,7 @@ import { NavBar } from './components/NavBar'
 import { Parallax } from './components/Parallax'
 import { RedesSociales } from './components/RedesSociales'
 import {proyectos} from "./constants/constante"
+import { ContactUs } from './components/ContactUs'
 
 
 
@@ -17,13 +18,13 @@ function App() {
   const proyecto = useRef(null)
   const redesSosciales = useRef(null)
   const inicio = useRef(null)
-
+  const contactame = useRef(null)
 
 
   return (
     <div >
       <div className='m-0 p-0 bg-slate-900 flex flex-col'>
-        <NavBar inicio={inicio} aboutMe={aboutMe} competencias={competencias} proyecto={proyecto} redesSociales={redesSosciales} />
+        <NavBar inicio={inicio} aboutMe={aboutMe} competencias={competencias} proyecto={proyecto} redesSociales={redesSosciales} contacto={contactame}/>
       </div>
       <Parallax />
       <div className='h-[150px] overflow-hidden mt-[-150px] '>
@@ -59,10 +60,28 @@ function App() {
         ))}
       </div>
 
-      <div className='w-[100%]'>
+      <div className='w-[100%] '>
         <RedesSociales inicio={inicio} />
       </div>
-
+      <div className='h-[150px] overflow-hidden bg-white'>
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='h-[100%] w-[100%]'>
+          <path d="M-1.41,142.42 C132.89,-53.94 380.64,265.78 503.10,84.20 L519.47,-20.39 L-3.10,-3.61 Z"
+            className='stroke-none fill-slate-900'></path>
+        </svg>
+      </div>
+      <div className='w-[100%] flex justify-center flex-row text-center items-center bg-white' ref={contactame}>
+        <div className='flex justify-center items-center flex-col'>
+        <h2 className='text-4xl ml-5 mr-5 mb-10'>¿Quieres agendar una reunión? Mándame un correo 😎 </h2>
+        <iframe  src="https://giphy.com/embed/Dh5q0sShxgp13DwrvG" width="480" height="296" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+        </div>
+        <ContactUs></ContactUs>
+      </div>
+      <div className='h-[150px] overflow-hidden bg-white'>
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" className='h-[100%] w-[100%]'>
+          <path d="M-1.97,94.25 C75.90,-142.58 382.34,217.61 501.41,-0.47 L500.00,150.00 L0.00,150.00 Z"
+            className='stroke-none fill-slate-900'></path>
+        </svg>
+      </div>
       <div>
         <Footer />
       </div>
