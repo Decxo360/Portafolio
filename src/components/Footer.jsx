@@ -37,7 +37,7 @@ export const Footer = () => {
         
       </div>
       
-      <h1>Diego Ignacio Lundstedt Muñoz ® 2023</h1>
+      <h1 className='text-white'>Diego Ignacio Lundstedt Muñoz ® 2023</h1>
     </div>
   )
 }
