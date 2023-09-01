@@ -23,6 +23,4 @@ jobs:
           repository: ${{ github.repository }}
           tag_with_ref: true
           tag_with_sha: true
-          tags: |
-            latest
-            ${{ github.sha.lower() }}
+          tags: ${{ github.sha.lower() }}
