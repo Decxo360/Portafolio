@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Imprimir secrets
         env:
-          MI_VARIABLE_SECRETA: ${{ secrets.MI_SECRET }}
+          MI_VARIABLE_SECRETA: ${{ secrets.DOCKER_USERNAME }}
         run: printenv
 
 # jobs:
