@@ -25,5 +25,4 @@ jobs:
           tag_with_sha: true
           tags: |
             latest
-            ${{ github.sha }}
-            $(echo "${{ github.sha }}" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9._-]//g')
+            ${{ github.sha.lower() }}
